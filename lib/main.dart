@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.green,
@@ -89,7 +90,7 @@ class _TestState extends State<Test> {
                     fit: BoxFit.cover,
                   ),
                 ),
-                child: Text(pickedFile!=null ? pickedFile?.files.first.name as String :'here') ,
+                child: Text('') ,
               ),
               Container(
                 child: Text(pickedFile!=null ? pickedFile?.files.first.name as String :'......',
